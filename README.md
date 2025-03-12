@@ -39,4 +39,4 @@ npm run dev
 
 ## Enjoy Online
 
-Check it out and give it a try: [React Pokedex App](https://react-pokedex-app-seven.vercel.app/))
+Check it out and give it a try: [React Pokedex App](https://react-pokedex-app-seven.vercel.app/)
