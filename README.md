@@ -41,6 +41,9 @@ npm run dev
 
 Check it out and give it a try: [React Pokedex App](https://react-pokedex-app-seven.vercel.app/)
 
+## 📷 Screenshots
+<p align="center">
+  <img src="screenshot1.png" width="45%" alt="Screenshot 1">
+  <img src="screenshot2.png" width="45%" alt="Screenshot 2">
+</p>
 
-![Project Screenshot](pokeapp.png)
-![Project Screenshot](pokeapp2.png)
