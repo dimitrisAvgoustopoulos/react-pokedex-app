@@ -2,20 +2,20 @@
 
 Welcome to the **Pokédex App**! This application is crafted with the power of **React** and the speed of **Vite**. Dive into the world of Pokémon where you can effortlessly search for your favorite Pokémon, explore their detailed stats, abilities, and moves, and filter them to suit your preferences. Enjoy a seamless and responsive experience!
 
-### Features
+### ✨Features
 
 - Search for Pokémon by name
 - View detailed information about each Pokémon, including abilities, stats, and moves
 - Filter Pokémon by displayed count and offset
 - Responsive design
 
-## Getting Started
+## 🚀Getting Started
 
 ### Run Locally
 
 Clone the repository:
 
-```b
+```bash
 git clone https://github.com/dimitrisAvgoustopoulos/react-pokedex-app.git
 ```
 
@@ -35,15 +35,14 @@ Start the development server:
 
 ```bash
 npm run dev
-````
+```
 
-## Enjoy Online
+## 🌍Enjoy Online
 
 Check it out and give it a try: [React Pokedex App](https://react-pokedex-app-seven.vercel.app/)
 
-## 📷 Screenshots
-<p align="center">
-  <img src="screenshot1.png" width="45%" alt="Screenshot 1">
-  <img src="screenshot2.png" width="45%" alt="Screenshot 2">
-</p>
+## Screenshots
+![Project Screenshot1](screenshots/screenshot1.png)
+<br><br>
+![Project Screenshot2](screenshots/screenshot2.png)
 
