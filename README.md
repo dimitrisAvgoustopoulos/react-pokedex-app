@@ -43,3 +43,4 @@ Check it out and give it a try: [React Pokedex App](https://react-pokedex-app-se
 
 
 ![Project Screenshot](pokeapp.png)
+![Project Screenshot](pokeapp2.png)
