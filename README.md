@@ -42,4 +42,4 @@ npm run dev
 Check it out and give it a try: [React Pokedex App](https://react-pokedex-app-seven.vercel.app/)
 
 
-![Project Screenshot](assets/images/screenshot.png)
+![Project Screenshot](pokeapp.png)
