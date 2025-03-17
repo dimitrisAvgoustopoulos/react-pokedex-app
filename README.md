@@ -1,4 +1,5 @@
 # React + Vite Pokédex App
+![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 Welcome to the **Pokédex App**! This application is crafted with the power of **React** and the speed of **Vite**. Dive into the world of Pokémon where you can effortlessly search for your favorite Pokémon, explore their detailed stats, abilities, and moves, and filter them to suit your preferences. Enjoy a seamless and responsive experience!
 
