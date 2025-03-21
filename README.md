@@ -37,10 +37,6 @@ Start the development server:
 npm run dev
 ```
 
-## 🌍Enjoy Online
-
-Check it out and give it a try: [React Pokedex App](https://react-pokedex-app-seven.vercel.app/)
-
 ## Screenshots
 ![Project Screenshot1](screenshots/screenshot1.png)
 <br><br>
