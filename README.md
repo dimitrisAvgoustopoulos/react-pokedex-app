@@ -4,7 +4,7 @@ Welcome to the **Pokédex App**! This application is crafted with the power of *
 
 ### ✨Features
 
-- Search for Pokémon by name
+- Search for Pokémon by name or type
 - View detailed information about each Pokémon, including abilities, stats, and moves
 - Filter Pokémon by displayed count and offset
 - Responsive design
@@ -36,6 +36,8 @@ Start the development server:
 ```bash
 npm run dev
 ```
+## 🌍Enjoy Online
+Check it out and give it a try: [React Pokédex App](https://react-pokedex-app-silk.vercel.app/)
 
 ## Screenshots
 ![Project Screenshot1](screenshots/screenshot1.png)
