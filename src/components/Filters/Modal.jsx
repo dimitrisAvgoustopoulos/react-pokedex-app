@@ -19,7 +19,7 @@ export default forwardRef( function Modal({},ref) {
         >
             <div className="text-center p-6"> 
                 <h2 className="font-semibold mb-4 text-3xl sm:text-5xl">Invalid Input</h2>
-                <p className="text-lg mb-6 sm:text-2xl">Please enter a maximum limit of 500 for Displayed Pokémons and 850 for Offset.</p>
+                <p className="text-lg mb-6 sm:text-2xl">Please enter a positive number. The maximum limit for Displayed Pokémons is 500, and the maximum limit for Offset is 850. No text is allowed.</p>
                 <button 
                     className="bg-amber-400 text-black font-semibold px-4 py-2 rounded-md hover:bg-amber-500 focus:outline-none"
                     onClick={() => dialog.current.close()}
