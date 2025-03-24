@@ -1,36 +1,39 @@
 import { useState, useRef} from "react";
 
 import NameSearch from "./NameSearch";
+import TypeFilter from "./TypeFilter";
 import Modal from "./Modal";
 
-export default function Filters({ handleNameSearch, onHandleFilters }) {
-    const [limit, setLimit] = useState(500);
-    const [offset, setOffset] = useState(0);
+export default function Filters({ handleNameSearch, handleTypeFilter, onHandleFilters, keyvalue }) {
+    const [filters, setFilter] = useState({
+        limit: 500,
+        offset: 0,
+    });
 
     const modal = useRef(); 
 
     const handleLimitChange = (e) => {
         const value = e.target.value;
-        if(value > 500) {
+        if(value > 500 || value < 0 || isNaN(value)) {
             modal.current.open();
-            setLimit(500);
+            setFilter({...filters, limit: 500});
             onHandleFilters(500, 0);
             return;
         }
-        setLimit(value);
-        onHandleFilters(value, offset);
+        setFilter({...filters, limit: value});
+        onHandleFilters(value, filters.offset);
     };
 
     const handleOffsetChange = (e) => {
         const value = e.target.value;
-        if(value > 850) {
+        if(value > 850 || value < 0 || isNaN(value)) {
             modal.current.open();
-            setOffset(0);
+            setFilter({...filters, offset: 0});
             onHandleFilters(500, 0);
             return;
         }
-        setOffset(value);
-        onHandleFilters(limit, value);
+        setFilter({...filters, offset: value});
+        onHandleFilters(filters.limit, value);
     }; 
 
     return (
@@ -44,7 +47,7 @@ export default function Filters({ handleNameSearch, onHandleFilters }) {
                         id="limit"
                         className='rounded-full p-2 w-28 mx-auto text-center text-xl font-semibold focus:outline-none'
                         type="number"
-                        value={limit}
+                        value={filters.limit}
                         max={500}
                         onChange={(event) => handleLimitChange(event)}
                     />
@@ -57,13 +60,16 @@ export default function Filters({ handleNameSearch, onHandleFilters }) {
                         id="offset"
                         className='rounded-full p-2 w-28 mx-auto text-center text-xl font-semibold focus:outline-none'
                         type="number"
-                        value={offset}
+                        value={filters.offset}
                         max={850}
                         onChange={(event) => handleOffsetChange(event)}
                     />
                 </div>
             </form>
-            <NameSearch onNameSearch={handleNameSearch} />
+            <div key={`filters-${filters.limit}-${filters.offset}`} className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+                <NameSearch onNameSearch={handleNameSearch} />
+                <TypeFilter onTypeFilter={handleTypeFilter} />
+            </div>
             <Modal ref={modal}/>
         </>
         
